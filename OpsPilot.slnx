@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/OpsPilot.Agents/OpsPilot.Agents.csproj" />
+    <Project Path="src/OpsPilot.Api/OpsPilot.Api.csproj" />
+    <Project Path="src/OpsPilot.Application/OpsPilot.Application.csproj" />
+    <Project Path="src/OpsPilot.Contracts/OpsPilot.Contracts.csproj" />
+    <Project Path="src/OpsPilot.Domain/OpsPilot.Domain.csproj" />
+    <Project Path="src/OpsPilot.Infrastructure/OpsPilot.Infrastructure.csproj" />
+    <Project Path="src/OpsPilot.Orchestration/OpsPilot.Orchestration.csproj" />
+    <Project Path="src/OpsPilot.Worker/OpsPilot.Worker.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/OpsPilot.AgentEvaluationTests/OpsPilot.AgentEvaluationTests.csproj" />
+    <Project Path="tests/OpsPilot.IntegrationTests/OpsPilot.IntegrationTests.csproj" />
+    <Project Path="tests/OpsPilot.UnitTests/OpsPilot.UnitTests.csproj" />
+  </Folder>
+</Solution>
