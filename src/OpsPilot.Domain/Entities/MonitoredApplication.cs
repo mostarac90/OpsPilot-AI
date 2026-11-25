@@ -30,6 +30,7 @@ public class MonitoredApplication : Entity
         Region = Require(region, nameof(region));
         Environment = Require(environment, nameof(environment));
         Description = description;
+        HealthCheckUrl = null;
         IsMonitoringEnabled = true;
         CreatedAtUtc = DateTime.UtcNow;
     }
