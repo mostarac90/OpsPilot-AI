@@ -34,6 +34,8 @@ public class Incident : Entity
         CreatedAt = DateTimeOffset.UtcNow;
     }
 
+    private readonly List<Investigation> _investigations = [];
+
     public Guid ApplicationId { get; private set; }
 
     public string Title { get; private set; } = string.Empty;
@@ -47,4 +49,14 @@ public class Incident : Entity
     public DateTimeOffset CreatedAt { get; private set; }
 
     public DateTimeOffset? ResolvedAt { get; private set; }
+
+    /// <summary>The investigations run for this incident (one incident can have many).</summary>
+    public IReadOnlyCollection<Investigation> Investigations => _investigations.AsReadOnly();
+
+    public Investigation StartInvestigation()
+    {
+        var investigation = new Investigation(Id);
+        _investigations.Add(investigation);
+        return investigation;
+    }
 }
