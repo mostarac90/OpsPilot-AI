@@ -1,9 +1,6 @@
-<Project Sdk="Microsoft.NET.Sdk.Worker">
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
 
   <PropertyGroup>
-    <TargetFramework>net11.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>dotnet-OpsPilot.Worker-904ecad1-2244-4920-bc3d-7bb8b54dba75</UserSecretsId>
   </PropertyGroup>
 
